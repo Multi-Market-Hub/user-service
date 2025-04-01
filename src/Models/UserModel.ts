@@ -22,7 +22,7 @@ export const createUser = async (user: User) => {
     return queryResult.rows[0];
 }
 
-export const login = async (user: basicUser) => {
+export const login = async (user: BasicUser) => {
     const { email } = user;
     const query = `SELECT * FROM users WHERE email = $1`;
     const values = [email]

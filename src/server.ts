@@ -7,5 +7,5 @@ app.use(express.json());
 app.use(cookie());
 app.use("/api", Routes);
 
-const port = 3006;
-app.listen(port, () => console.log(`server running on ${port}`))
+const port = 3001;
+app.listen(port, () => console.log(`server running on ${port}`));
