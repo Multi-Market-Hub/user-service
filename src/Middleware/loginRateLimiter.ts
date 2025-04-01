@@ -29,7 +29,6 @@ const loginRateLimiter = async (req: Request, res: Response, next: NextFunction)
         console.error(error, "Redis Error");
         return res.status(500).json({ message: "Server error. Please try again later" });
     }
-
 }
 
 export default loginRateLimiter;
